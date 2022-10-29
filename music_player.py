@@ -100,7 +100,8 @@ class Songs:
         
         while True:
             try:
-                option = int(input(songs.printMenu()))
+                songs.printMenu()
+                option = int(input())
             except ValueError as e:
                 print("Please enter only digits and not any other character.\nRe-run the program and try again.")
                 break
